@@ -1,7 +1,5 @@
 FROM apache/airflow:2.9.1-python3.11
 
-LABEL maintainer="Nghi Le Thanh (Data)"
-
 RUN mkdir -p /opt/airflow/authentication
 COPY airflow-dev.gpg /opt/airflow/authentication/
 COPY .env /opt/airflow/authentication/
