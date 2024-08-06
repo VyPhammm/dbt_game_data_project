@@ -1,0 +1,70 @@
+{
+    "bigquery_billing_project": "data-platform-387707",
+    "bigquery_project": "sipher-data-testing",
+    "clickup_api": "pk_61746297_P9YUWU2IOITZN81TZJ7NUPE9U2RB4AXA",
+    "clickup_oauth_token": {
+        "client_id": "8OJ04NG9JL5NDHJ92S944XESBDE5B1WK",
+        "client_secret": "OGCRWDQB29KQBZNQE1I26O49L2AZTF94B6LTDFEGHAEH8JOHW33K5YRAXI7NNACP",
+        "redirect_url": "https://playsipher.com/",
+        "code": "ONPYHX0ISKVXBLTC9SSFWHKE8AE20YM3"
+    },
+    "discord_token": {
+        "guild": "SIPHER",
+        "guild_id": 857914873106399303,
+        "token": "OTc0MTMzMTY4MjEyOTUxMTEw.GAG5l7.j97zvxtqGCxdtAYVlHr3MyxpLaHrxQ1QuSExgI"
+    },
+    "etherscan_api_key": "QIKQNZ12DER6CVFQVDB4AZBJTG2DN425GA",
+    "execution_environment": "dev",
+    "ingestion_gcs_bucket": "atherlabs-test",
+    "polygon_api_key": "KIEX69PD6CRDTG9TV41MTBI5CHKJKUUYGS",
+    "pro_coinmarketcap_token": "a9625547-626e-4bbd-8af0-45b78f4adba5",
+    "sensortower_token": "ST0_IxfWtBxS_bQy1nsGq7GL2Ee",
+    "sipher_wallet_transaction_recipients": "U0228PR3ZSQ, dinh.nguyen, tin.nguyen, thanh.tran",
+    "slack": {
+        "app_id": "A042GLMAW5R",
+        "bot_user_oauth_token": "xoxb-2093335487792-4104842477442-RenzI5hOSdw5Qr3tklDBmJnl",
+        "client_id": "2093335487792.4084701370195",
+        "client_secret": "be162c0bd5d36ce19699f68917bb9e60",
+        "signing_secret": "de5b80d20e5ccedabc0186f805adbf2a",
+        "verification_token": "PwO3T1SrF99mT4Rl87D8MRqb"
+    },
+    "tiktok_token": {
+        "tiktok_app_id": "",
+        "tiktok_secret": "",
+        "tiktok_auth_code": "",
+        "tiktok_access_token": "",
+        "tiktok_advertiser_id": ""
+    },
+    "twitter_token": {
+        "AtherLabs": {
+            "access_token": "1402266580357201923-VJvb1FqtYZIAkRZ14V3d3frpNK6GaY",
+            "access_token_secret": "fNYXWQxvBrYEHiClrwkq5YhMBONVHerI2gJjvStz8MKNc",
+            "bearer_token": "AAAAAAAAAAAAAAAAAAAAAMtGfQEAAAAATS1adQJBWIK%2BXTcxRw%2Fv7N29HqY%3DU2Em7txc60On6k1IAa2AByINGeGdlxM9q0ezmf46PIKrThaUYL",
+            "consumer_key": "5eB4dAqWu1OHOCsKxOo5qRWe9",
+            "consumer_secret": "b2eSHkdgPZnZMaU7KEOp9p2m3d23Ia9IrLccDVlGAPQlVgXZ07",
+            "user_id": 1505051237238325250,
+            "user_name": "AtherLabs"
+        },
+        "SIPHERxyz": {
+            "access_token": "1402266580357201923-Dd6dCi7M5q4z7NVZ0lgXdn9tjVrhRu",
+            "access_token_secret": "BCqmj5qEeAiUzxleaUYs2hg2ZYhM9pZur08qih2DBRpPa",
+            "bearer_token": "AAAAAAAAAAAAAAAAAAAAAMtGfQEAAAAA3wcWHQcst7U0gJQAS8CdRYRieS8%3DkaEe4VAASf1pJwOGgMdP8A3pYGnXeluUOQVpgdZBBXGvpHPuPD",
+            "consumer_key": "RDPbyZuLfPo4369Hru9QviBRE",
+            "consumer_secret": "oeNznjfBRzEPIdDSqxUGo6WlBcZbBuVNFkrHhLEgg7S9Dtlck5",
+            "user_id": 1402266580357201923,
+            "user_name": "SIPHERxyz"
+        }
+    },
+    "unity_token": {
+        "unity_organization_token": "64d9b4072d62bf6aabe89c13",
+        "unity_api_token": "0ad9d85b4ea420a2efdc8b9a0bef829193b640dc7483518aaf27fa417119aa39"
+    },
+    "twitter_token__SIPHERxyz": "{'access_token': '1402266580357201923-Dd6dCi7M5q4z7NVZ0lgXdn9tjVrhRu',\r\n 'access_token_secret': 'BCqmj5qEeAiUzxleaUYs2hg2ZYhM9pZur08qih2DBRpPa',\r\n 'bearer_token': 'AAAAAAAAAAAAAAAAAAAAAMtGfQEAAAAA3wcWHQcst7U0gJQAS8CdRYRieS8%3DkaEe4VAASf1pJwOGgMdP8A3pYGnXeluUOQVpgdZBBXGvpHPuPD',\r\n 'consumer_key': 'RDPbyZuLfPo4369Hru9QviBRE',\r\n 'consumer_secret': 'oeNznjfBRzEPIdDSqxUGo6WlBcZbBuVNFkrHhLEgg7S9Dtlck5',\r\n 'user_id': 1402266580357201923,\r\n 'user_name': 'SIPHERxyz'}",
+    "google_ad_words_token": {
+        "google_ad_developer_token": "UPETxTZwOHg0KpFvi58X0w",
+        "google_ad_login_customer_id": "4026678554",
+        "google_ad_refresh_token": "1//04PO32VxGP7tSCgYIARAAGAQSNwF-L9IrjZ7MY21oZygXkMlYGFeuA0G-ymajFvNvR8_FuLSAn-b8pZsEV5TwNCVQEUT2xIWAWuA",
+        "google_ad_client_id": "874180918549-6cr9l69qtq97cjta7j046kmi1270v3r0.apps.googleusercontent.com",
+        "google_ad_client_secret": "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"
+    }
+}
