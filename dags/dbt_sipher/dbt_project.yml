@@ -1,0 +1,109 @@
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dbt_sipher'
+version: '1.0.0'
+config-version: 2
+
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_sipher'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+tests:
+  +store_failures: true  # all tests
+
+
+# to log tests result and sync to GBQ.
+on-run-end:
+  - "{{ store_test_results(results) }}"
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/ directory
+# as tables. These settings can be overridden in the individual model files
+# using the `{{ config(...) }}` macro.
+models:
+  dbt_sipher:
+    marts:
+      adjust:
+        +schema: "adjust"
+      social:
+        +schema: "mart_social"
+      staking_pool:
+        +schema: "staking_public_data"
+      sipher_odyssey_core:
+        +schema: "sipher_odyssey_core"
+      sipher_odyssey_crafting:
+        +schema: "sipher_odyssey_crafting"
+      sipher_odyssey_level_design:
+        +schema: "sipher_odyssey_level_design"
+      sipher_odyssey_inventory:
+        +schema: "sipher_odyssey_inventory"
+      hidden_atlas_core:
+        +schema: "hidden_atlas_core"
+      artventure:
+        +schema: "artventure"
+      google_ads:
+        +schema: "google_ads"
+      finance_incubator:
+        +schema: "finance_incubator"
+      sipher_odyssey_shop_transaction:
+        +schema: "sipher_odyssey_shop_transaction"
+    staging:
+      adjust:
+        +schema: "staging_adjust"
+      social:
+        +schema: "staging_social"
+      aws__ather_id:
+        +schema: "raw_aws_atherlabs"
+      aws__billing:
+        +schema: "raw_aws_billing_gcs"
+      aws__loyalty:
+        +schema: "raw_aws_loyalty"
+      bigquery_public__crypto_ethereum:
+        +schema: "sipher_ethereum"
+      coinmarketcap:
+        +schema: "raw_etherscan"
+      etherscan:
+        +schema: "raw_etherscan"
+      opensearch_onchain:
+        +schema: "raw_aws_opensearch_onchain_nft"
+      firebase:
+        +schema: "staging_firebase"
+      sipher_server:
+        +schema: "staging_sipher_server"
+      max_mediation:
+        +schema: "staging_max_mediation"
+      artventure:
+        +schema: "raw_artventure"
+      appsflyer:
+        +schema: "staging_appsflyer"
+      sipher_odyssey_shop_transaction:
+        +schema: "staging_sipher_odyssey_shop_transaction"
+    reporting:
+      social:
+        +schema: "reporting_social"
+      adjust:
+        +schema: "reporting_adjust"
+      sipher_odyssey_user:
+        +schema: "reporting_sipher_odyssey_user"
+      finance_incubator:
+        +schema: "finance_incubator"
